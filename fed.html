@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <style>
+        /* Your existing CSS styles here */
+    </style>
+</head>
+<body>
+    <form id="feedbackForm">
+        <h2>Feedback Form</h2>
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="feedback">Your Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+        <button type="button" onclick="submitFeedback()">Submit Feedback</button>
+    </form>
+
+    <script>
+        function submitFeedback() {
+            // Perform any additional validation here if needed
+
+            // Display the alert
+            alert("Thank you for your feedback!");
+            
+            // You can also add code here to submit the form data to a server using AJAX if needed
+
+            // Clear the form fields if needed
+            document.getElementById("feedbackForm").reset();
+        }
+    </script>
+</body>
+</html>
